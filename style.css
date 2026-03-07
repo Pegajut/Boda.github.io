@@ -1,0 +1,137 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --azul-cielo: #87CEEB;
+    --negro-elegante: #1a1a1a;
+    --blanco-puro: #ffffff;
+    --gris-suave: #f4f4f4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--blanco-puro);
+    color: var(--negro-elegante);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--negro-elegante);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Cabecera */
+.header p {
+    color: var(--azul-cielo);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+}
+
+/* Texto Bíblico */
+.verse {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 30px 0;
+    padding: 15px;
+    border-top: 1px solid var(--azul-cielo);
+    border-bottom: 1px solid var(--azul-cielo);
+}
+
+/* Tarjetas */
+.details {
+    background-color: var(--blanco-puro);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    border-bottom: 4px solid var(--azul-cielo);
+}
+
+.details h2 {
+    color: var(--azul-cielo);
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.btn-mapa {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: var(--negro-elegante);
+    color: var(--blanco-puro);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-mapa:hover {
+    background-color: var(--azul-cielo);
+    transform: translateY(-3px);
+}
+
+.btn-ws {
+    background-color: #25d366 !important;
+}
+
+/* Contador */
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.time-box {
+    background-color: var(--azul-cielo);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 65px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid var(--gris-suave);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    border-color: var(--azul-cielo);
+    transform: scale(1.03);
+}
